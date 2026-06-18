@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Analyzer AI</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="bg-orb3"></div>
+
+  <nav>
+    <div class="logo">GitHub Analyzer AI</div>
+  </nav>
+
+  <main class="grid">
+
+    <!-- INPUT PANEL -->
+    <section class="panel">
+
+    <h1>Decode Any Developer</h1>
+
+      <p>Enter a GitHub username to generate an AI-powered profile breakdown.</p>
+
+      <input id="username" placeholder="e.g. torvalds">
+
+      <button id="searchBtn">Run Analysis</button>
+
+      <div class="hint">Instant insights • No login required</div>
+
+    </section>
+
+    <!-- RESULT PREVIEW (FAKE UI = IMPORTANT FOR "SEXY") -->
+    <section class="preview">
+
+      <div class="profile-card">
+
+        <div class="avatar"></div>
+
+        <div>
+          <h2>Linus Torvalds</h2>
+          <p>@torvalds</p>
+        </div>
+
+      </div>
+
+      <div class="metrics">
+
+        <div class="box">
+          <div class="num">1.2k</div>
+          <div class="label">Repositories</div>
+        </div>
+
+        <div class="box">
+          <div class="num">54</div>
+          <div class="label">Languages</div>
+        </div>
+
+        <div class="box">
+          <div class="num">980k</div>
+          <div class="label">Followers</div>
+        </div>
+
+        <div class="box">
+          <div class="num">High</div>
+          <div class="label">Activity Score</div>
+        </div>
+
+      </div>
+
+      <div class="graph">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+    </section>
+
+  </main>
+<script src="script.js"></script>
+</body>
+
+</html>
