@@ -37,8 +37,8 @@ app.get("/api/github/:username", async (req, res) => {
 
     const topRepos = repos
       .sort((a, b) => b.stargazers_count - a.stargazers_count)
-      .slice(0, 3)
-      .map(r => ({ name: r.name, stars: r.stargazers_count, language: r.language }));
+      .slice(0, 20)
+      .map(r => ({ name: r.name, stars: r.stargazers_count, language: r.language,  url: r.html_url }));
 
     res.json({
       name: profile.name || username,
